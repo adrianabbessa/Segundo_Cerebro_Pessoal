@@ -104,8 +104,8 @@ Se você é diretor e precisa acessar também o cérebro do time e
 o da diretoria:
 
 cd ~/brains
-git clone git@github.com:{{ORG}}/grupo-vab-second-brain.git
-git clone git@github.com:{{ORG}}/grupo-vab-diretoria.git
+git clone git@github.com:adrianabbessa/grupo-vab-second-brain.git
+git clone git@github.com:adrianabbessa/grupo-vab-diretoria.git
 
 Depois disso, o Claude carrega os 3 juntos automaticamente quando
 você abrir qualquer um dos 3 no Cowork/Claude Code.

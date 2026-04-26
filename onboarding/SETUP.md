@@ -32,10 +32,10 @@ Recomenda-se clonar junto aos outros 2 cérebros (se você for diretor e tiver a
 ```bash
 mkdir -p ~/brains
 cd ~/brains
-git clone git@github.com:{{SUA_CONTA}}/grupo-vab-ada.git
+git clone git@github.com:adrianabbessa/grupo-vab-ada.git
 # se diretor, clone também:
-# git clone git@github.com:{{ORG}}/grupo-vab-second-brain.git
-# git clone git@github.com:{{ORG}}/grupo-vab-diretoria.git
+# git clone git@github.com:adrianabbessa/grupo-vab-second-brain.git
+# git clone git@github.com:adrianabbessa/grupo-vab-diretoria.git
 cd grupo-vab-ada
 ```
 
