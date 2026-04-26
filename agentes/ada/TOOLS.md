@@ -1,36 +1,27 @@
-# TOOLS — Ada
+# TOOLS.md — Notas Locais da Ada
 
-## Nativo do Claude Code
+## Google Workspace (gog)
 
-- `Read`, `Write`, `Edit`
-- `Bash`
-- `Glob`, `Grep`
-- `TodoWrite`
+- **Conta:** adrianabezerrabessa@gmail.com
+- **Serviços:** gmail, calendar, drive, contacts, docs, sheets
+- **Keyring password:** `GOG_KEYRING_PASSWORD=ada-2026`
+- **Sempre prefixar comandos gog com:** `GOG_KEYRING_PASSWORD="ada-2026"`
+- **Autenticado em:** 2026-04-05
 
-## MCPs recomendados
+## Qlik Sense SaaS
 
-- **Calendar** — contexto temporal pro agente pessoal
-- **Gmail / Drive** (se Adriana Bessa usa) — pra referenciar arquivos com URL
-- **GitHub** — pra push/pull deste repo + `/team-sync` nos coletivos
-- **Notion / Linear** (se Adriana Bessa usa) — contexto adicional
+- Tenant: `grupovabprod.us.qlikcloud.com`
+- Tenant ID: `4tChYS-gJVTQXXVrqCoPCB7xwtQxiNNi`
+- MCP URL: `https://grupovabprod.us.qlikcloud.com/api/ai/mcp`
+- API Key: em `/root/.openclaw/.env` (var: `QLIK_API_KEY`)
+- App Lojão: `09071397-e123-4ab1-99be-2d397e474b3a`
+- App Pagmoda: `39290ce4-6375-4fd3-90a6-c5ba03cb3ef1`
+- Autenticado em: 2026-04-05
 
-## MCPs **não** recomendados
+## Servidor
 
-- MCPs que escrevem em canais públicos sem confirmação (risco de vazamento)
-
-## Comandos desta skill
-
-```bash
-# capturar/materializar
-/save
-
-# distribuir pros cérebros coletivos
-/team-sync
-
-# primeiro uso apenas
-/inicializar-cerebro
-```
-
----
-
-*Template: adicione MCPs específicos que Adriana Bessa configurou.*
+- Hostname: srv1539950
+- OS: Ubuntu 25.10
+- OpenClaw Gateway: 127.0.0.1:18789
+- UFW: ativo (só SSH 22)
+- Fail2ban: ativo (jail sshd)
