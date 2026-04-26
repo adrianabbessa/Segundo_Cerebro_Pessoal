@@ -22,7 +22,7 @@
 1. Acesse `github.com/pixel-educacao/template-second-brain-pessoal`.
 2. **"Use this template" → "Create a new repository"**.
 3. Owner: **sua conta pessoal** (não a Org da empresa — este cérebro é seu).
-4. Nome sugerido: `{{EMPRESA_SLUG}}-{{AGENTE_SLUG}}` (ex: `acme-amora`).
+4. Nome sugerido: `grupo-vab-ada` (ex: `acme-amora`).
 5. Visibilidade: **Private**.
 
 ## Fase 2 — Clonar local
@@ -32,11 +32,11 @@ Recomenda-se clonar junto aos outros 2 cérebros (se você for diretor e tiver a
 ```bash
 mkdir -p ~/brains
 cd ~/brains
-git clone git@github.com:{{SUA_CONTA}}/{{EMPRESA_SLUG}}-{{AGENTE_SLUG}}.git
+git clone git@github.com:{{SUA_CONTA}}/grupo-vab-ada.git
 # se diretor, clone também:
-# git clone git@github.com:{{ORG}}/{{EMPRESA_SLUG}}-second-brain.git
-# git clone git@github.com:{{ORG}}/{{EMPRESA_SLUG}}-diretoria.git
-cd {{EMPRESA_SLUG}}-{{AGENTE_SLUG}}
+# git clone git@github.com:{{ORG}}/grupo-vab-second-brain.git
+# git clone git@github.com:{{ORG}}/grupo-vab-diretoria.git
+cd grupo-vab-ada
 ```
 
 ## Fase 3 — Inicializar
@@ -61,7 +61,7 @@ Faça uma conversa qualquer com o Claude (ex: "me ajude a pensar sobre o lançam
 Claude:
 - Revisa tudo que foi discutido
 - Pergunta se há arquivos em Drive/outros que vale referenciar
-- Materializa capturas em `empresa/contexto/` (ou cria daily note em `agentes/{{AGENTE_SLUG}}/memory/YYYY-MM-DD.md`)
+- Materializa capturas em `empresa/contexto/` (ou cria daily note em `agentes/ada/memory/YYYY-MM-DD.md`)
 - Commita e pusha em `main`
 
 ## Fase 5 — Primeira `/team-sync` (quando tiver conteúdo pra distribuir)
@@ -82,7 +82,7 @@ Se quiser agente pessoal rodando autônomo:
 
 - Suba OpenClaw no VPS
 - Clone este repo no workspace do VPS
-- Configure crons (exemplos em `agentes/{{AGENTE_SLUG}}/HEARTBEAT.md`)
+- Configure crons (exemplos em `agentes/ada/HEARTBEAT.md`)
 
 ## Tempo total
 

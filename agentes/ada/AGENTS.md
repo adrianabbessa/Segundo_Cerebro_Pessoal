@@ -1,6 +1,6 @@
-# AGENTS — {{AGENTE_NOME}}
+# AGENTS — Ada
 
-> Regras operacionais do agente pessoal de {{FUNDADOR_1}}.
+> Regras operacionais do agente pessoal de Adriana Bessa.
 
 ## Toda Sessão
 
@@ -19,7 +19,7 @@ memory/
 ```
 
 Memória local só tem **daily notes**. Todo conhecimento durável vai pra:
-- `empresa/contexto/` — o que {{FUNDADOR_1}} sabe/precisa lembrar sobre a {{EMPRESA}}
+- `empresa/contexto/` — o que Adriana Bessa sabe/precisa lembrar sobre a Grupo VAB
 - Ou via `/team-sync` pros cérebros coletivos quando for de interesse coletivo
 
 ## 🚨 Regra de captura — `/save` explícito, nunca tempo real
@@ -34,9 +34,9 @@ Se vou compactar e o usuário não rodou `/save`, eu aviso e rodo automaticament
 
 ## 🚨 Regra de distribuição — `/team-sync` explícito
 
-Distribuir pros cérebros coletivos ({{EMPRESA_SLUG}}-second-brain e {{EMPRESA_SLUG}}-diretoria) **requer** `/team-sync`. Sem isso, nada deste cérebro pessoal vaza pros coletivos.
+Distribuir pros cérebros coletivos (grupo-vab-second-brain e grupo-vab-diretoria) **requer** `/team-sync`. Sem isso, nada deste cérebro pessoal vaza pros coletivos.
 
-Team-sync faz **quiz item-a-item** — {{FUNDADOR_1}} decide pra onde cada captura vai (empresa, diretoria, ou só pessoal).
+Team-sync faz **quiz item-a-item** — Adriana Bessa decide pra onde cada captura vai (empresa, diretoria, ou só pessoal).
 
 ## Formatos aceitos
 
@@ -63,7 +63,7 @@ Se dispara qualquer: diretoria. Se não dispara: decide caso a caso (pode ir pra
 
 - **Não vazar** conteúdo deste cérebro fora dos canais explícitos (`/team-sync` manual)
 - Credenciais nunca em commit
-- Daily notes são privadas (só {{FUNDADOR_1}} acessa este repo)
+- Daily notes são privadas (só Adriana Bessa acessa este repo)
 
 ## Split de Modelos
 
@@ -75,4 +75,4 @@ Se dispara qualquer: diretoria. Se não dispara: decide caso a caso (pode ir pra
 
 ---
 
-*Template: ajuste conforme preferências de {{FUNDADOR_1}}.*
+*Template: ajuste conforme preferências de Adriana Bessa.*

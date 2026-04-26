@@ -82,12 +82,12 @@ Campos esperados para Adriana:
 
 | placeholder | valor sugerido |
 |---|---|
-| `{{FUNDADOR_1}}` | Adriana Bessa |
-| `{{FUNDADOR_1_SLUG}}` | adriana |
-| `{{EMPRESA}}` | Holding Adriana Bessa / Grupo VAB *(confirmar nome jurídico/operacional desejado)* |
-| `{{EMPRESA_SLUG}}` | grupo-vab *(confirmar)* |
-| `{{AGENTE_NOME}}` | Ada |
-| `{{AGENTE_SLUG}}` | ada |
+| `Adriana Bessa` | Adriana Bessa |
+| `adriana` | adriana |
+| `Grupo VAB` | Holding Adriana Bessa / Grupo VAB *(confirmar nome jurídico/operacional desejado)* |
+| `grupo-vab` | grupo-vab *(confirmar)* |
+| `Ada` | Ada |
+| `ada` | ada |
 
 ### `save`
 

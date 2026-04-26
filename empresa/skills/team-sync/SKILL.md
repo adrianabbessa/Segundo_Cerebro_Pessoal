@@ -19,9 +19,9 @@ Os 2 cérebros coletivos devem estar clonados **lado a lado** deste:
 
 ```
 ~/brains/
-├── {{EMPRESA_SLUG}}-second-brain/
-├── {{EMPRESA_SLUG}}-diretoria/
-└── {{EMPRESA_SLUG}}-{{AGENTE_SLUG}}/    ← estou aqui
+├── grupo-vab-second-brain/
+├── grupo-vab-diretoria/
+└── grupo-vab-ada/    ← estou aqui
 ```
 
 Se algum dos 2 não existir ou não estiver no path esperado, a skill pergunta onde está (ou aborta se o diretor não tem acesso).
@@ -35,9 +35,9 @@ Lê `.team-sync-log` na raiz do cérebro pessoal (se existir) pra pegar o últim
 ```bash
 LAST_SYNCED=$(cat .team-sync-log 2>/dev/null | tail -1 | awk '{print $1}' || echo "")
 if [ -n "$LAST_SYNCED" ]; then
-  git log --oneline $LAST_SYNCED..HEAD -- empresa/contexto/ agentes/{{AGENTE_SLUG}}/memory/
+  git log --oneline $LAST_SYNCED..HEAD -- empresa/contexto/ agentes/ada/memory/
 else
-  git log --oneline HEAD -- empresa/contexto/ agentes/{{AGENTE_SLUG}}/memory/
+  git log --oneline HEAD -- empresa/contexto/ agentes/ada/memory/
 fi
 ```
 
@@ -51,8 +51,8 @@ Pra cada arquivo novo/modificado, mostrar resumo curto (2-3 linhas do conteúdo)
 > _Resumo: atualizei com novo projeto 'Apollo launch' — meta 500k, deadline 15/07._
 >
 > _Onde esse conteúdo vai?_
-> _[1] Time (cérebro da empresa) — inbox/{{FUNDADOR_1_SLUG}}/_
-> _[2] Diretoria — inbox/{{FUNDADOR_1_SLUG}}/_
+> _[1] Time (cérebro da empresa) — inbox/adriana/_
+> _[2] Diretoria — inbox/adriana/_
 > _[3] Ambos_
 > _[4] Só pessoal (não distribuir)_
 > _[5] Ver conteúdo completo antes de decidir"_
@@ -71,11 +71,11 @@ Se o conteúdo dispara qualquer dos 3 gatilhos (dinheiro com nome próprio, pess
 
 Pra cada item com destino **Time** ou **Diretoria**:
 
-1. Copiar o arquivo (Markdown/HTML) pra `inbox/{{FUNDADOR_1_SLUG}}/` do repo-destino
+1. Copiar o arquivo (Markdown/HTML) pra `inbox/adriana/` do repo-destino
 2. Gerar sidecar `.meta.yaml` com:
 
 ```yaml
-autor: {{FUNDADOR_1_SLUG}}
+autor: adriana
 data: {timestamp do /team-sync}
 fonte: team-sync-de-pessoal
 tipo: proposta-canonica        # default — consolidação abre PR
@@ -99,12 +99,12 @@ Se sugerir, preenche `destino_sugerido` no sidecar.
 Pra cada cérebro-destino que recebeu capturas:
 
 ```bash
-cd ../{{EMPRESA_SLUG}}-second-brain  # ou -diretoria
+cd ../grupo-vab-second-brain  # ou -diretoria
 git fetch origin
 git checkout staging
 git pull --rebase origin staging
-git add inbox/{{FUNDADOR_1_SLUG}}/
-git commit -m "team-sync: {{FUNDADOR_1}} ({N} capturas)"
+git add inbox/adriana/
+git commit -m "team-sync: Adriana Bessa ({N} capturas)"
 git push origin staging
 ```
 
@@ -124,8 +124,8 @@ Próximo `/team-sync` usa esse log pra pegar só capturas mais recentes.
 ## Confirmação final
 
 > _"✅ Team-sync completo._
-> _- {N} capturas enviadas pro time (inbox/{{FUNDADOR_1_SLUG}}/ em staging)_
-> _- {M} capturas enviadas pra diretoria (inbox/{{FUNDADOR_1_SLUG}}/ em staging)_
+> _- {N} capturas enviadas pro time (inbox/adriana/ em staging)_
+> _- {M} capturas enviadas pra diretoria (inbox/adriana/ em staging)_
 > _- {K} capturas mantidas só pessoal (não distribuídas)"_
 
 ## Regras duras
@@ -139,7 +139,7 @@ Próximo `/team-sync` usa esse log pra pegar só capturas mais recentes.
 ## Edge cases
 
 - **Cérebros coletivos não clonados localmente** — skill orienta a clonar lado a lado ou sair
-- **Conflito em `inbox/{{FUNDADOR_1_SLUG}}/` (outro sócio com mesmo slug?)** — não deveria acontecer; abortar com alerta
+- **Conflito em `inbox/adriana/` (outro sócio com mesmo slug?)** — não deveria acontecer; abortar com alerta
 - **Rede offline** — skill detecta e sai com erro; nada é committed até retomar
 
 ---

@@ -1,4 +1,4 @@
-# TOOLS — {{AGENTE_NOME}}
+# TOOLS — Ada
 
 ## Nativo do Claude Code
 
@@ -10,9 +10,9 @@
 ## MCPs recomendados
 
 - **Calendar** — contexto temporal pro agente pessoal
-- **Gmail / Drive** (se {{FUNDADOR_1}} usa) — pra referenciar arquivos com URL
+- **Gmail / Drive** (se Adriana Bessa usa) — pra referenciar arquivos com URL
 - **GitHub** — pra push/pull deste repo + `/team-sync` nos coletivos
-- **Notion / Linear** (se {{FUNDADOR_1}} usa) — contexto adicional
+- **Notion / Linear** (se Adriana Bessa usa) — contexto adicional
 
 ## MCPs **não** recomendados
 
@@ -33,4 +33,4 @@
 
 ---
 
-*Template: adicione MCPs específicos que {{FUNDADOR_1}} configurou.*
+*Template: adicione MCPs específicos que Adriana Bessa configurou.*

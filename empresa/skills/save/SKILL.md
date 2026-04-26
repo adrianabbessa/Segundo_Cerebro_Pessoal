@@ -20,7 +20,7 @@ description: Flush de fim de sessão do cérebro pessoal. Materializa buffer men
 ### Passo 1 — Revisão mental
 
 Reler toda a sessão desde o último `/save` (ou desde o início). Separar em categorias:
-- **Daily note** — o que aconteceu na sessão (vai pra `agentes/{{AGENTE_SLUG}}/memory/YYYY-MM-DD.md`)
+- **Daily note** — o que aconteceu na sessão (vai pra `agentes/ada/memory/YYYY-MM-DD.md`)
 - **Contexto durável** — conhecimento que deve persistir (vai pra `empresa/contexto/`)
 - **Referências externas** — arquivos em Drive/Notion/etc. que vale guardar URL
 
@@ -34,7 +34,7 @@ Salvar como Markdown com link, não o arquivo em si.
 
 ### Passo 3 — Montar daily note
 
-Criar/atualizar `agentes/{{AGENTE_SLUG}}/memory/YYYY-MM-DD.md`:
+Criar/atualizar `agentes/ada/memory/YYYY-MM-DD.md`:
 
 ```markdown
 # {{YYYY-MM-DD}}

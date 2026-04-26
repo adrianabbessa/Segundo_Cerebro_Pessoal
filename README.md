@@ -35,9 +35,9 @@ Quando você é diretor, você opera **3 cérebros em paralelo:**
 
 ```
 ~/brains/
-├── {{EMPRESA_SLUG}}-second-brain/        ← cérebro do time (clonado do template-empresa)
-├── {{EMPRESA_SLUG}}-diretoria/           ← cérebro da diretoria (clonado do template-diretoria)
-└── {{EMPRESA_SLUG}}-{{AGENTE_SLUG}}/     ← este cérebro pessoal
+├── grupo-vab-second-brain/        ← cérebro do time (clonado do template-empresa)
+├── grupo-vab-diretoria/           ← cérebro da diretoria (clonado do template-diretoria)
+└── grupo-vab-ada/     ← este cérebro pessoal
 ```
 
 Ao abrir o Claude Code/Cowork neste cérebro pessoal, o `CLAUDE.md` instrui a ferramenta a **carregar também** os outros 2 cérebros paralelos (lê `CLAUDE.md` + `MAPA.md` de cada). Contexto completo numa sessão só.
@@ -58,7 +58,7 @@ template-second-brain-pessoal/
 ├── onboarding/
 │   └── SETUP.md
 ├── agentes/
-│   └── {{AGENTE_SLUG}}/
+│   └── ada/
 │       ├── IDENTITY.md, SOUL.md, USER.md, AGENTS.md, TOOLS.md, HEARTBEAT.md, MEMORY.md
 │       ├── .env.example, .gitignore
 │       └── memory/

@@ -1,6 +1,6 @@
 # rotinas/ — automações pessoais
 
-Pasta pra descrever automações (crons) que {{FUNDADOR_1}} configurou no próprio fluxo.
+Pasta pra descrever automações (crons) que Adriana Bessa configurou no próprio fluxo.
 
 ## Exemplos possíveis
 
@@ -33,4 +33,4 @@ Daily note do dia com capturas do buffer + push no repo pessoal.
 
 ## Não é obrigatório
 
-Se {{FUNDADOR_1}} opera só via laptop on-demand (sem VPS), essa pasta fica vazia. Nada de rotina automática é obrigatória.
+Se Adriana Bessa opera só via laptop on-demand (sem VPS), essa pasta fica vazia. Nada de rotina automática é obrigatória.

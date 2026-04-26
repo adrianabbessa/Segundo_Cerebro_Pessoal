@@ -1,6 +1,6 @@
 ---
 name: inicializar-cerebro
-description: Configurar o cérebro pessoal pela primeira vez após clonar o template-second-brain-pessoal. Preenche placeholders ({{EMPRESA}}, {{AGENTE_NOME}}, {{FUNDADOR_1}}, etc.) em todos os arquivos, renomeia a pasta do agente pro slug escolhido. Roda UMA VEZ após o clone — aborta se já foi executada.
+description: Configurar o cérebro pessoal pela primeira vez após clonar o template-second-brain-pessoal. Preenche placeholders (Grupo VAB, Ada, Adriana Bessa, etc.) em todos os arquivos, renomeia a pasta do agente pro slug escolhido. Roda UMA VEZ após o clone — aborta se já foi executada.
 ---
 
 # Inicializar Cérebro — Template Pessoal
@@ -31,20 +31,20 @@ Pergunte: _"Entendeu o papel deste cérebro?"_
 
 ### Passo 2 — Coleta de dados
 
-1. **Nome da empresa** → `{{EMPRESA}}` (ex: "Acme Corp")
-2. **Slug da empresa** → `{{EMPRESA_SLUG}}` (ex: "acme")
-3. **Domínio** → `{{EMPRESA_DOMINIO}}` (ex: "acme.com")
-4. **Seu nome completo** → `{{FUNDADOR_1}}`
-5. **Seu slug pessoal** → `{{FUNDADOR_1_SLUG}}` (ex: "ana-s") — usado também no team-sync (vai pra `inbox/{slug}/` dos coletivos)
-6. **Seu email** → `{{FUNDADOR_1_EMAIL}}`
-7. **Seu cargo** → `{{FUNDADOR_1_CARGO}}` (ex: "CEO", "COO")
-8. **Escopo resumido** → `{{FUNDADOR_1_ESCOPO}}` (1-2 linhas do que você faz)
-9. **Timezone** → `{{TIMEZONE}}` (default: `America/Sao_Paulo`)
-10. **Idioma** → `{{IDIOMA}}` (default: `pt-BR`)
-11. **Nome do seu agente pessoal** → `{{AGENTE_NOME}}` (ex: "Amora", "Jarvis")
-12. **Slug do agente** → `{{AGENTE_SLUG}}` (ex: "amora", "jarvis")
-13. **Nome do agente do time** (pra referências cross-repo) → `{{AGENTE_TIME_NOME}}` (ex: "Oliver")
-14. **Nome do agente da diretoria** (pra referências cross-repo) → `{{AGENTE_DIRETORIA_NOME}}` (ex: "Atena")
+1. **Nome da empresa** → `Grupo VAB` (ex: "Acme Corp")
+2. **Slug da empresa** → `grupo-vab` (ex: "acme")
+3. **Domínio** → `grupovab.com.br` (ex: "acme.com")
+4. **Seu nome completo** → `Adriana Bessa`
+5. **Seu slug pessoal** → `adriana` (ex: "ana-s") — usado também no team-sync (vai pra `inbox/{slug}/` dos coletivos)
+6. **Seu email** → `adrianabezerrabessa@gmail.com`
+7. **Seu cargo** → `CFO e Fundadora` (ex: "CEO", "COO")
+8. **Escopo resumido** → `CFO do Lojão do Brás, fundadora da Pagmoda, professora de ML e coach de corrida` (1-2 linhas do que você faz)
+9. **Timezone** → `America/Sao_Paulo` (default: `America/Sao_Paulo`)
+10. **Idioma** → `pt-BR` (default: `pt-BR`)
+11. **Nome do seu agente pessoal** → `Ada` (ex: "Amora", "Jarvis")
+12. **Slug do agente** → `ada` (ex: "amora", "jarvis")
+13. **Nome do agente do time** (pra referências cross-repo) → `Iris` (ex: "Oliver")
+14. **Nome do agente da diretoria** (pra referências cross-repo) → `Atena` (ex: "Atena")
 
 ### Passo 3 — Confirmação + aplicação
 
@@ -104,8 +104,8 @@ Se você é diretor e precisa acessar também o cérebro do time e
 o da diretoria:
 
 cd ~/brains
-git clone git@github.com:{{ORG}}/{{EMPRESA_SLUG}}-second-brain.git
-git clone git@github.com:{{ORG}}/{{EMPRESA_SLUG}}-diretoria.git
+git clone git@github.com:{{ORG}}/grupo-vab-second-brain.git
+git clone git@github.com:{{ORG}}/grupo-vab-diretoria.git
 
 Depois disso, o Claude carrega os 3 juntos automaticamente quando
 você abrir qualquer um dos 3 no Cowork/Claude Code.
@@ -116,7 +116,7 @@ você abrir qualquer um dos 3 no Cowork/Claude Code.
 
 Se você quer agente pessoal rodando 24/7, suba OpenClaw no VPS
 apontando pro workspace deste repo. Scripts de apoio em
-agentes/{{AGENTE_SLUG}}/HEARTBEAT.md.
+agentes/ada/HEARTBEAT.md.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 4) USO DIÁRIO — /save automático antes de compactar

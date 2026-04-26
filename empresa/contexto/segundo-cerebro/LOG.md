@@ -27,7 +27,7 @@ Lidos em paralelo:
 **Status atual dos repos:**
 - ✅ Templates clonados e disponíveis no servidor VPS `srv1539950`
 - ❌ Placeholders `{{...}}` ainda não substituídos — skill `inicializar-cerebro` não foi rodada
-- ❌ Agentes dos templates têm slug `{{AGENTE_SLUG}}` / `geral-empresa` / `geral-diretoria` — não personalizados
+- ❌ Agentes dos templates têm slug `ada` / `geral-empresa` / `geral-diretoria` — não personalizados
 - ❌ Nenhuma estação pessoal criada em nenhum dos 3 repos
 - ❌ Nenhum cron/consolidação configurado
 - ❌ Branch `staging` não criada em nenhum dos repos

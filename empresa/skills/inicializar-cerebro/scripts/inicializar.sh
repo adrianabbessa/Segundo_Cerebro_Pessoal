@@ -97,13 +97,13 @@ replace_in_tree "AGENTE_TIME_NOME"       "$AGENTE_TIME_NOME"
 replace_in_tree "AGENTE_DIRETORIA_NOME"  "$AGENTE_DIRETORIA_NOME"
 
 # Renomear pasta do agente
-OLD_AGENT_DIR="agentes/{{AGENTE_SLUG}}"
+OLD_AGENT_DIR="agentes/ada"
 NEW_AGENT_DIR="agentes/$AGENTE_SLUG"
 
-# Como os placeholders já foram substituídos no find acima, a pasta continua com o nome literal {{AGENTE_SLUG}}
+# Como os placeholders já foram substituídos no find acima, a pasta continua com o nome literal ada
 # até a gente renomear
-if [ -d "agentes/{{AGENTE_SLUG}}" ]; then
-  git mv "agentes/{{AGENTE_SLUG}}" "agentes/$AGENTE_SLUG" 2>/dev/null || mv "agentes/{{AGENTE_SLUG}}" "agentes/$AGENTE_SLUG"
+if [ -d "agentes/ada" ]; then
+  git mv "agentes/ada" "agentes/$AGENTE_SLUG" 2>/dev/null || mv "agentes/ada" "agentes/$AGENTE_SLUG"
 fi
 
 # Remove rodapés meta-template stale (linha "*Gerado a partir...*" + separador "---"

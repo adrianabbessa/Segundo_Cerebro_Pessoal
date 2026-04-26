@@ -1,4 +1,4 @@
-# MAPA — Cérebro Pessoal de {{FUNDADOR_1}}
+# MAPA — Cérebro Pessoal de Adriana Bessa
 
 ## Função
 
@@ -6,22 +6,22 @@ Ponto de entrada pra navegar este cérebro pessoal.
 
 ## Contexto
 
-Este é o cérebro pessoal/individual de **{{FUNDADOR_1}}** — um por diretor (ou por cargo). É o workspace canônico do **OpenClaw pessoal** ({{AGENTE_NOME}}).
+Este é o cérebro pessoal/individual de **Adriana Bessa** — um por diretor (ou por cargo). É o workspace canônico do **OpenClaw pessoal** (Ada).
 
 ## Relação com os outros 2 cérebros
 
-Se você é diretor da {{EMPRESA}}, tem acesso a 3 cérebros simultâneos:
+Se você é diretor da Grupo VAB, tem acesso a 3 cérebros simultâneos:
 
 | cérebro | propósito | branches | captura |
 |---|---|---|---|
-| `{{EMPRESA_SLUG}}-second-brain` | operacional do time (coletivo) | staging + main | via `/save` + `/team-sync` |
-| `{{EMPRESA_SLUG}}-diretoria` | sensível da diretoria (coletivo) | staging + main (PR sempre) | via `/save` + `/team-sync` |
-| **este** (pessoal) | só de {{FUNDADOR_1}} | só main | via `/save` (direto) + daily notes do agente |
+| `grupo-vab-second-brain` | operacional do time (coletivo) | staging + main | via `/save` + `/team-sync` |
+| `grupo-vab-diretoria` | sensível da diretoria (coletivo) | staging + main (PR sempre) | via `/save` + `/team-sync` |
+| **este** (pessoal) | só de Adriana Bessa | só main | via `/save` (direto) + daily notes do agente |
 
 ## Estrutura
 
-- `agentes/{{AGENTE_SLUG}}/` — agente pessoal ({{AGENTE_NOME}}) com config + daily notes em `memory/`
-- `empresa/contexto/` — o que {{FUNDADOR_1}} sabe/lembra sobre a {{EMPRESA}} e contexto pro trabalho dele
+- `agentes/ada/` — agente pessoal (Ada) com config + daily notes em `memory/`
+- `empresa/contexto/` — o que Adriana Bessa sabe/lembra sobre a Grupo VAB e contexto pro trabalho dele
 - `empresa/skills/` — skills próprias do cérebro pessoal (inicializar-cerebro, save, team-sync)
 - `empresa/rotinas/` — automações pessoais (se houver)
 

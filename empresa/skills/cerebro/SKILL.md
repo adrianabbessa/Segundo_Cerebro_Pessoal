@@ -11,11 +11,11 @@ description: Carrega em paralelo os CLAUDE.md dos cérebros disponíveis em `~/b
 
 Detecta os cérebros presentes em `~/brains/` e lê o `CLAUDE.md` de cada um (1 mensagem, N tool calls Read em paralelo):
 
-- `{{FUNDADOR_1_SLUG}}-second-brain/CLAUDE.md` — cérebro pessoal de {{FUNDADOR_1}} (agente: {{AGENTE_NOME}})
-- `{{EMPRESA_SLUG}}-second-brain/CLAUDE.md` — cérebro do time (agente: {{AGENTE_TIME_NOME}})
-- `{{EMPRESA_SLUG}}-diretoria/CLAUDE.md` — cérebro da diretoria (agente: {{AGENTE_DIRETORIA_NOME}})
+- `adriana-second-brain/CLAUDE.md` — cérebro pessoal de Adriana Bessa (agente: Ada)
+- `grupo-vab-second-brain/CLAUDE.md` — cérebro do time (agente: Iris)
+- `grupo-vab-diretoria/CLAUDE.md` — cérebro da diretoria (agente: Atena)
 
-Membros do time que só têm 1 cérebro (`{{EMPRESA_SLUG}}-second-brain`) também podem rodar — nesse caso é no-op (Claude Code já carrega o CLAUDE.md do cwd se a sessão abriu direto no repo). Útil mesmo pra 3 cérebros.
+Membros do time que só têm 1 cérebro (`grupo-vab-second-brain`) também podem rodar — nesse caso é no-op (Claude Code já carrega o CLAUDE.md do cwd se a sessão abriu direto no repo). Útil mesmo pra 3 cérebros.
 
 ## Quando rodar
 
@@ -30,18 +30,18 @@ Membros do time que só têm 1 cérebro (`{{EMPRESA_SLUG}}-second-brain`) també
 3. Se algum symlink estiver quebrado ou permissão falhar, reportar qual falhou e seguir com os que carregou
 4. Confirmar em **1 linha curta**, listando agente de cada cérebro:
 
-   > 3 cérebros carregados: {{AGENTE_NOME}} (pessoal), {{AGENTE_TIME_NOME}} (time), {{AGENTE_DIRETORIA_NOME}} (diretoria).
+   > 3 cérebros carregados: Ada (pessoal), Iris (time), Atena (diretoria).
 
    Se faltou algum:
 
-   > 2/3 cérebros carregados: {{AGENTE_NOME}} ✓, {{AGENTE_TIME_NOME}} ✓, diretoria ✗ (symlink quebrado).
+   > 2/3 cérebros carregados: Ada ✓, Iris ✓, diretoria ✗ (symlink quebrado).
 
 ## O que NÃO faz
 
 - Não faz `git pull` — pra sincronizar com remoto, rodar manualmente.
 - Não distribui capturas — pra isso, `/team-sync`.
 - Não persiste sessão — pra isso, `/save`.
-- Não cria daily note — {{AGENTE_NOME}} faz sob demanda.
+- Não cria daily note — Ada faz sob demanda.
 
 ## Relação com outras skills
 
@@ -58,9 +58,9 @@ Default: `~/brains/{nome-do-cerebro}/CLAUDE.md`
 
 Se a sessão foi aberta fora de `~/brains/`, usar path absoluto:
 
-- `$HOME/brains/{{FUNDADOR_1_SLUG}}-second-brain/CLAUDE.md`
-- `$HOME/brains/{{EMPRESA_SLUG}}-second-brain/CLAUDE.md`
-- `$HOME/brains/{{EMPRESA_SLUG}}-diretoria/CLAUDE.md`
+- `$HOME/brains/adriana-second-brain/CLAUDE.md`
+- `$HOME/brains/grupo-vab-second-brain/CLAUDE.md`
+- `$HOME/brains/grupo-vab-diretoria/CLAUDE.md`
 
 ---
 
