@@ -108,3 +108,70 @@ Os arquivos vivem canonicamente em:
 - `/root/Segundo_Cerebro_Pessoal/empresa/contexto/segundo-cerebro/LOG.md`
 
 A cópia em `tmp/` pode ser descartada. Toda atualização futura deve ser feita diretamente neste repo.
+
+### 20:14 UTC — Cérebro Pessoal inicializado com sucesso
+
+**Skill executada:** `inicializar-cerebro`  
+**Script:** `empresa/skills/inicializar-cerebro/scripts/inicializar.sh`
+
+**Valores aplicados:**
+
+| campo | valor |
+|---|---|
+| Empresa | Grupo VAB |
+| Empresa slug | grupo-vab |
+| Domínio | grupovab.com.br |
+| Fundadora | Adriana Bessa |
+| Slug fundadora | adriana |
+| Email | adrianabezerrabessa@gmail.com |
+| Cargo | CFO e Fundadora |
+| Agente pessoal | Ada |
+| Agente slug | ada |
+| Agente empresa (ref.) | Iris |
+| Agente diretoria (ref.) | Atena |
+| Timezone | America/Sao_Paulo |
+| Idioma | pt-BR |
+
+**O que foi feito:**
+- Todos os placeholders `{{...}}` substituídos em 27 arquivos
+- Pasta `agentes/{{AGENTE_SLUG}}/` renomeada para `agentes/ada/`
+- `.cerebro-inicializado` criado (trava de reexecução)
+- Tag de backup criada: `pre-inicializacao-20260426-201409`
+- Placeholders residuais `{{ORG}}` e `{{SUA_CONTA}}` corrigidos para `adrianabbessa`
+- 3 commits em `main`: PRD+LOG, init, correção
+
+**Status do push:**
+- ⏳ Aguardando chave SSH pessoal no GitHub
+- Chave: `ssh-ed25519 AAAA...` em `/root/.ssh/ada_backup_github.pub`
+- Commits locais prontos: `1df7c16`, `12ec362`, `0590104`
+
+### 20:14 UTC — Cérebro Pessoal inicializado com sucesso
+
+**Skill executada:** `inicializar-cerebro`
+
+**Valores aplicados:**
+
+| campo | valor |
+|---|---|
+| Empresa | Grupo VAB |
+| Empresa slug | grupo-vab |
+| Domínio | grupovab.com.br |
+| Fundadora | Adriana Bessa |
+| Slug | adriana |
+| Email | adrianabezerrabessa@gmail.com |
+| Cargo | CFO e Fundadora |
+| Agente pessoal | Ada |
+| Agente slug | ada |
+| Agente empresa (ref.) | Iris |
+| Agente diretoria (ref.) | Atena |
+| Timezone | America/Sao_Paulo |
+| Idioma | pt-BR |
+
+**O que foi feito:**
+- 27 arquivos com placeholders substituídos
+- `agentes/{{AGENTE_SLUG}}/` renomeada para `agentes/ada/`
+- `.cerebro-inicializado` criado
+- Tag de backup: `pre-inicializacao-20260426-201409`
+- Commits locais prontos: `1df7c16`, `12ec362`, `0590104`
+
+**Status push:** ⏳ Aguardando chave SSH pessoal no GitHub (`adrianabbessa` → Settings → SSH keys)
